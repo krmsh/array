@@ -1,7 +1,8 @@
 languages = ["Ruby", "PHP", "Java"]
 
 puts "様々な言語のHello World\n"
-puts 
+puts
+puts
 
 languages.each do |language|
   if language == "Ruby"
