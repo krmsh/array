@@ -2,13 +2,14 @@ languages = ["Ruby", "PHP", "Java"]
 
 puts "様々な言語のHello World\n"
 puts
-puts
 
 languages.each do |language|
-  if language == "Ruby"
+  case language
+  when "Ruby"
     puts "#{language}:puts \"Hello World!\""
-  elsif language == "PHP"
+  when "PHP"
     puts "#{language}:echo \"Hello World!\";"
-  else language == "Java"
-    puts "#{language}:System.out.println(\"Hello World!\");"   end
+  when "Java"
+    puts "#{language}:System.out.println(\"Hello World!\");"
+  end
 end
